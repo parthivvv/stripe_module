@@ -66,7 +66,7 @@ Similarly, for PayPal payments, the service offers endpoints that interact with 
 The service includes robust validation for all incoming requests to ensure data integrity and security. It uses class-validator to enforce validation rules on payment requests.
 
 ## Screenshots
-![Customer](https://github.com/parthivvv/stripe_custom_sdk/blob/main/mainpage.png)
-![PaymentLanding](https://github.com/parthivvv/stripe_custom_sdk/blob/main/invalid_entry.png)
-![StripePayment](https://github.com/parthivvv/stripe_custom_sdk/blob/main/API_endpoint.png)
+![Customer](https://github.com/parthivvv/stripe_module/blob/main/mainpage.png)
+![PaymentLanding](https://github.com/parthivvv/stripe_module/blob/main/invalid_entry.png)
+![StripePayment](https://github.com/parthivvv/stripe_module/blob/main/API_endpoint.png)
 
