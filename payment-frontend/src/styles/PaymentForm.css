@@ -1,0 +1,103 @@
+/* PaymentForm.css */
+.payment-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Use the full height of the viewport */
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* A cool gradient background */
+}
+
+.payment-form {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensure everything is centered in the form */
+  gap: 20px; /* Increase space out between form elements */
+  max-width: 400px; /* Ensure the form isn't too wide */
+  width: 90%; /* Allow it to shrink on smaller screens, but not too much */
+  box-sizing: border-box;
+}
+
+.form-group {
+  width: 100%; /* Ensure the form group takes the full width of the form */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the label and input */
+}
+
+.form-group label {
+  color: #fff; /* White text for the labels */
+  margin-bottom: 10px; /* Increase space between label and input */
+  font-size: 25px; /* Make label text larger */
+  text-align: center; /* Center the text of the label */
+}
+/* Hide the arrow buttons in input[type="number"] for Chrome, Safari, Edge, Opera */
+.payment-form input::-webkit-outer-spin-button,
+.payment-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.payment-form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffffb3;
+  opacity: 1; /* Firefox */
+}
+
+.payment-form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ffffffb3;
+}
+
+.payment-form input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ffffffb3;
+}
+
+
+/* Hide the arrow buttons in input[type="number"] for Firefox */
+.payment-form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.payment-form input:focus {
+  outline: none; /* Optionally remove the outline on focus */
+  border-color: #06D6A0; /* Highlight input when focused */
+}
+
+
+.payment-form input {
+  padding: 15px 20px; /* Increase padding for a larger input */
+  width: 80%; /* Make the input wider but not full-width to maintain aesthetics */
+  border-radius: 6px; /* Slightly rounder borders */
+  border: 2px solid #ffffff66; /* Subtle white border */
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly more visible than the form background */
+  color: #fff; /* White text color for the input */
+  font-size: 20px; /* Larger font size for readability */
+  text-align: center; /* Center the text inside the input */
+}
+
+.payment-form input:focus {
+  border-color: #06D6A0; /* Highlight input when focused */
+}
+
+.payment-form button {
+  padding: 12px 25px; /* Increase padding for a bigger button */
+  font-size: 18px; /* Larger font size for the button text */
+  width: 50%; /* Button width to make it stand out and easy to click */
+    background-color: #06D6A0; /* A vibrant button color */
+    color: #fff; /* White text on the button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Indicate the button is clickable */
+    transition: background-color 0.3s; /* Smooth transition for button hover */
+  }
+  
+  .payment-form button:hover {
+    background-color: #04a688; /* Darken the button a bit when hovered */
+  }
+  
+  .error-message {
+    color: #FF595E; /* A standout color for error messages */
+    margin-top: 10px; /* Add some space above the error message */
+  }
+  
